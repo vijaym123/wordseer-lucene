@@ -1,0 +1,67 @@
+{
+   "name":"root",
+   "dataType":"string",
+   "filename":"tweets.xml",
+   "tag":"root",
+   "structureName":"root",
+   "units":[
+      {
+         "name":"tweet",
+         "dataType":"string",
+         "structureName":"tweet",
+         "tag":"tweet",
+         "combine":false,
+         "units":[
+            {
+               "name":"sentence",
+               "dataType":"string",
+               "structureName":"text",
+               "tag":"text",
+               "combine":false,
+               
+               "xpaths":[
+                  "./text/text()"
+               ],
+               "type":"subunit",
+               "id":"tagger-id-text",
+               "metadata":[
+
+               ]
+            }
+         ],
+         "xpaths":[
+            "./tweet"
+         ],
+         "type":"subunit",
+         "id":"tweets-text",
+         "metadata":[
+            
+            {
+               "isCategory":true,
+               "displayName":"name",
+               "name":"name",
+               "dateFormat":"",
+               "dataType":"string",
+               "propertyName":"name",
+               "valueIsDisplayed":true,
+               "nameIsDisplayed":true,
+               "tag":"name",
+               "xpaths":[
+                  "./name"
+               ],
+               "type":"metadata",
+               "id":"tagger-id-name",
+               "isActive":true
+               
+            }         ]
+      }
+   ],
+   "xpaths":[
+      "/root"
+   ],
+   "type":"document",
+   "id":"tagger-id-root",
+   "metadata":[
+
+   ]
+}

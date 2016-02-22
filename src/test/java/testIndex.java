@@ -17,7 +17,7 @@ public class testIndex {
         }
 
 
-        String xmldocument = "/Users/vijaysm/Desktop/wordseer-examples/tweets/tweets.xml";
+        String xmldocument = "./data/tweets.xml";
         indexer.indexFile(xmldocument);
 
         //===================================================
